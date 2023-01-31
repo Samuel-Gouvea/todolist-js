@@ -35,6 +35,7 @@ const saveTodo = (text) => {
     todoInput.value = "";
 
 };
+
 // Eventos
 todoForm.addEventListener("submit", (e)=> {
     e.preventDefault();
@@ -44,4 +45,8 @@ todoForm.addEventListener("submit", (e)=> {
     if(inputValue) {
         saveTodo(inputValue);
     }
+});
+
+document.addEventListener("click", (e) => {
+    
 })
