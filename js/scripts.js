@@ -32,6 +32,8 @@ const saveTodo = (text) => {
 
     todoList.appendChild(todo);
 
+    todoInput.value = "";
+
 };
 // Eventos
 todoForm.addEventListener("submit", (e)=> {
