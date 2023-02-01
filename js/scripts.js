@@ -69,4 +69,9 @@ document.addEventListener("click", (e) => {
     if(targetEl.classList.contains("edit-todo")){
         toggleForms()
     }
-})
+});
+
+cancelEditBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    toggleForms();
+});
