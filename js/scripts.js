@@ -53,7 +53,7 @@ document.addEventListener("click", (e) => {
     const parentEl = targetEl.closest("div");
 
     if(targetEl.classList.contains("finish-todo")){
-       
+       parentEl.classList.add("done");
     }
 
 })
