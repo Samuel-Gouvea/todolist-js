@@ -57,6 +57,11 @@ document.addEventListener("click", (e) => {
 
     const targetEl = e.target
     const parentEl = targetEl.closest("div");
+    let todoTitle;
+
+    if(parentEl && parentEl.querySelector("h3")){
+        todoTitle = parentEl.querySelector("h3").innerText;
+    }
 
     if(targetEl.classList.contains("finish-todo")){
        parentEl.classList.toggle("done");
@@ -73,5 +78,6 @@ document.addEventListener("click", (e) => {
 
 cancelEditBtn.addEventListener("click", (e) => {
     e.preventDefault();
+
     toggleForms();
 });
