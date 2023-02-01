@@ -74,7 +74,10 @@ document.addEventListener("click", (e) => {
     }
 
     if(targetEl.classList.contains("edit-todo")){
-        toggleForms()
+        toggleForms();
+
+        editInput.value = todoTitle
+        oldInputValue.value = todoTitle
     }
 });
 
