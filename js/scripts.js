@@ -44,6 +44,18 @@ const toggleForms = () => {
     todoList.classList.toggle("hide");
 }
 
+const updateTodo = (text) => {
+    const todos = document.querySelectorAll(".todo");
+  
+    todos.forEach((todo) => {
+      let todoTitle = todo.querySelector("h3");
+  
+      if (todoTitle.innerText === oldInputValue) {
+        todoTitle.innerText = text;
+      };
+    });
+};
+
 // Eventos
 todoForm.addEventListener("submit", (e)=> {
     e.preventDefault();
@@ -77,7 +89,7 @@ document.addEventListener("click", (e) => {
         toggleForms();
 
         editInput.value = todoTitle
-        oldInputValue.value = todoTitle
+        oldInputValue = todoTitle
     }
 });
 
