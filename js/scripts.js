@@ -94,7 +94,7 @@ editForm.addEventListener("submit", (e) => {
     const editInputValue = editInput.value
 
     if(editInputValue) {
-        //atualizar
+        updateTodo(editInputValue)
     }
 
     toggleForms();
