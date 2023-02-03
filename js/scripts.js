@@ -42,7 +42,7 @@ const toggleForms = () => {
     editForm.classList.toggle("hide");
     todoForm.classList.toggle("hide");
     todoList.classList.toggle("hide");
-}
+};
 
 const updateTodo = (text) => {
     const todos = document.querySelectorAll(".todo");
@@ -54,6 +54,22 @@ const updateTodo = (text) => {
         todoTitle.innerText = text;
       };
     });
+};
+
+const getSearchedTodos = (search) => {
+  const todos = document.querySelectorAll(".todo");
+
+  todos.forEach((todo) => {
+    const todoTitle = todo.querySelector("h3").innerText.toLowerCase();
+
+    todo.style.display = "flex";
+
+    console.log(todoTitle);
+
+    if (!todoTitle.includes(search)) {
+      todo.style.display = "none";
+    }
+  });
 };
 
 // Eventos
