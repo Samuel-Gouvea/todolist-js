@@ -136,3 +136,11 @@ searchInput.addEventListener("keyup", (e) => {
 
   getSearchedTodos(search);
 });
+
+eraseBtn.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  searchInput.value = "";
+
+  searchInput.dispatchEvent(new Event("keyup"));
+});
