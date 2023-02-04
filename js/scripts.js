@@ -6,6 +6,7 @@ const editForm = document.querySelector("#edit-form");
 const editInput = document.querySelector("#edit-input");
 const cancelEditBtn = document.querySelector("#cancel-edit-btn");
 const searchInput = document.querySelector("#search-input");
+const eraseBtn = document.querySelector("#erase-button")
 
 let oldInputValue;
 
