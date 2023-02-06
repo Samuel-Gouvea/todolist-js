@@ -75,6 +75,8 @@ const getSearchedTodos = (search) => {
   });
 };
 
+
+
 // Eventos
 todoForm.addEventListener("submit", (e)=> {
     e.preventDefault();
@@ -144,4 +146,10 @@ eraseBtn.addEventListener("click", (e) => {
   searchInput.value = "";
 
   searchInput.dispatchEvent(new Event("keyup"));
+});
+
+filterBtn.addEventListener("change", (e) => {
+  const filterValue = e.target.value;
+
+  filterTodos(filterValue);
 });
