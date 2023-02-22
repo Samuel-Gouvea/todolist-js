@@ -1,7 +1,7 @@
 <h1 align="center"> Todo Advanced </h1>
 
 <p align="center">
-Projeto desenvolvido com a utilização de JavaScript puro. Os dados armazenados no navegador persistem mesmo depois que a janela do navegador for fechada graças a propriedade localStorage. Ademais, toggle functions e eventos baseados no DOM foram construídos para tornar a experiência do usuário mais dinâmica e intuitiva.<br/>
+Projeto desenvolvido com a utilização de JavaScript puro. Os dados armazenados no navegador persistem mesmo depois que a janela do navegador for fechada graças à propriedade localStorage. Ademais, toggle functions e eventos baseados no DOM foram construídos para atualizar os dados da página e ações realizadas sem que seja necessário atualizá-la. Logo, a experiência do usuário se torna mais dinâmica e intuitiva.<br/>
 </p>
 
 <p align="center">
@@ -39,4 +39,4 @@ Esse projeto está sob a licença MIT.
 
 ---
 
-Made by Samuel Gouvea
+Made by Samuel Gouvea 😁
