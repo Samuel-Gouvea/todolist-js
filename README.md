@@ -1,7 +1,7 @@
-<h1 align="center"> Todo advanced </h1>
+<h1 align="center"> Todo Advanced </h1>
 
 <p align="center">
-NLW é um evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
+Projeto desenvolvido com a utilização de JavaScript puro. Os dados armazenados no navegador persistem mesmo depois que a janela do navegador for fechada graças a propriedade localStorage. Ademais, toggle functions e eventos baseados no DOM foram construídos para tornar a experiência do usuário mais dinâmica e intuitiva.<br/>
 </p>
 
 <p align="center">
